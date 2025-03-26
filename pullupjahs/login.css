@@ -1,0 +1,91 @@
+/* 전체 페이지 배경색과 폰트 스타일 */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;  /* 부드러운 배경색 */
+    color: #333;  /* 텍스트 색상 */
+    margin: 0;
+    padding: 0;
+}
+
+/* 헤더 스타일 */
+header {
+    background-color: #4CAF50; /* 초록색 배경 */
+    color: white;  /* 흰색 글자 */
+    padding: 10px 0;
+    text-align: center;
+    font-size: 24px;
+}
+
+/* 로그인 폼 스타일 */
+.form-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* 폼 요소들 */
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;  /* 버튼 배경 초록 */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;  /* 버튼 hover 효과 */
+}
+
+/* 에러 메시지 */
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* 성공 메시지 */
+.success-message {
+    color: green;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* 실패 메시지 */
+.fail-message {
+    color: red;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 600px) {
+    .form-container {
+        padding: 15px;
+        width: 90%;  /* 모바일 화면에서는 폼을 넓게 */
+    }
+
+    button {
+        font-size: 14px;  /* 모바일에서는 버튼 글자 크기 줄이기 */
+    }
+}
+
+/* 클릭 애니메이션 효과 */
+button:active {
+    transform: scale(0.98);  /* 클릭 시 버튼이 살짝 작아지도록 */
+    transition: transform 0.1s ease;
+}
